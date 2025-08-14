@@ -136,7 +136,6 @@ zsh
 # ALCI Packages 
 alci-calamares
 alci-calamares-config-zen
-alci-grub-theme-git
 xterm
 bash-completion
 os-prober
