@@ -187,7 +187,7 @@ wdisplays
 wf-recorder
 
 #Display manager
-greetd
+sddm
 nwg-hello
 
 #Disk utilities
