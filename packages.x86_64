@@ -133,12 +133,27 @@ xfsprogs
 xl2tpd
 zsh
 
-# ALCI Packages - automatically removed
+# ALCI Packages 
 alci-calamares
 alci-calamares-config-zen
-
+alci-grub-theme-git
+xterm
+bash-completion
+os-prober
+libxinerama
+make
+xorg-xkill
+xorg-xrdb
+mkinitcpio-openswap
 
 # DE Packages
+xorg-server
+xorg-apps
+neofetch
+xf86-video-nouveau
+xf86-video-intel
+lightdm
+lightdm-gtk-greeter
 
 #Launchers
 dex
@@ -176,7 +191,6 @@ xdg-desktop-portal
 xdg-desktop-portal-wlr
 xorg-xhost
 fish
-xterm
 
 #Screenshot tools
 grim
@@ -187,7 +201,6 @@ wdisplays
 wf-recorder
 
 #Display manager
-sddm
 nwg-hello
 
 #Disk utilities
@@ -231,6 +244,7 @@ wtype
 celluloid
 
 #Network
+networkmanager
 network-manager-applet
 
 #Office
