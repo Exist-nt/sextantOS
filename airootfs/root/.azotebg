@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-pkill swaybg
-swaybg -o * -i "~/.config/azote/cat-waves-mocha.png" -m fill &
