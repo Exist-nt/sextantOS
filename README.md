@@ -9,7 +9,7 @@ SextantOS is an Arch-based Linux distribution built around keyboard navigation a
 There are two main ways of getting Sextant: **building with ArchISO** or **downloading a released ISO**.
 
 <p align=center>
-  <img src="https://raw.githubusercontent.com/Exist-nt/sextantOS/master/images/sextant-promo.png" alt="Promo image 2" width=600 />
+  <img src="https://existnt.net/Images/sextant-promo-2.png" alt="Promo image 2" width=600 />
 </p>
 
 # Building SextantOS
