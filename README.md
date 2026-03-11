@@ -8,7 +8,7 @@ There are two main ways of getting Sextant: **building with ArchISO** or **downl
 
 <img src="https://existnt.net/Images/sextant-promo-2.png alt="Promo image 2" width=600 />
 
-#Building SextantOS
+# Building SextantOS
 
 To build the most up-to-date version of Sextant, you must be using an Arch Linux machine with the `archiso` package installed. Once this is installed, use the following commands to build the ISO yourself:
 ```
@@ -18,7 +18,7 @@ sudo mkarchiso -r -v ./sextantOS
 
 The built ISO will then be stored in the `./out` directory.
 
-#Downloading SextantOS
+# Downloading SextantOS
 
 To download a stable release of Sextant, go to the Releases tab of this repository and download the ISO there.
 
