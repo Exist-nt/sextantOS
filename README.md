@@ -1,20 +1,35 @@
-# sextantOS
+# SextantOS
 
-SextantOS is a custom Arch Linux operating system centered around keyboard navigation.
-To get this operating system yourself, you can either download the ISO in the release page or follow the below steps to build the ISO yourself.
+<img src="https://existnt.net/Images/sextant-promo.png alt="Promo image" width=600 />
 
-# Building Sextant
-**Clone the Git repository:**
+SextantOS is an Arch-based Linux distribution built around keyboard navigation and a minimal aesthetic. It uses the **sway** window manager and many TUI-based applications to make it as lightweight and fast as possible, with preconfigured settings to ensure consistent and good-looking theming.
 
-`git clone https://github.com/Exist-nt/sextantOS.git`
+There are two main ways of getting Sextant: **building with ArchISO** or **downloading a released ISO**.
 
-**Build the ISO:**
+<img src="https://existnt.net/Images/sextant-promo-2.png alt="Promo image 2" width=600 />
 
-`sudo mkarchiso -r -v ./sextantOS`
+#Building SextantOS
 
+To build the most up-to-date version of Sextant, you must be using an Arch Linux machine with the `archiso` package installed. Once this is installed, use the following commands to build the ISO yourself:
+```
+git clone https://github.com/Exist-nt/sextantOS.git
+sudo mkarchiso -r -v ./sextantOS 
+```
 
-After making/downloading the ISO, you can then burn it to a USB to try the live environment and install it to your system:
+The built ISO will then be stored in the `./out` directory.
 
-`sudo dd if=./out/sextantos-*-x86_64.iso of=/dev/sdX status=progress && sync`
+#Downloading SextantOS
 
-You can then enter the live environment by rebooting your computer and selecting your USB as the boot option.
+To download a stable release of Sextant, go to the Releases tab of this repository and download the ISO there.
+
+#Burning SextantOS to a USB
+
+If you are on any system other than Linux, install `balena-etcher` or any comparable program to burn the ISO to a USB.
+
+On Linux, you can either use `balena-etcher` for a graphical interface or the `dd` command to burn the image.
+
+First, navigate to the directory containing the ISO (`Downloads` or `out`), then run the following command:
+```
+sudo dd if=sextantos-XXXX.XX.XX-x86_64.iso of=/dev/sdX status=progress && sync
+```
+You'll need to specify the date in the ISO's filename, and the letter of the USB drive which you want the ISO to be burned to (use `lsblk` to list the available devices and their drive letter)
