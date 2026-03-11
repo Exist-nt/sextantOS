@@ -22,7 +22,7 @@ The built ISO will then be stored in the `./out` directory.
 
 To download a stable release of Sextant, go to the Releases tab of this repository and download the ISO there.
 
-#Burning SextantOS to a USB
+# Burning SextantOS to a USB
 
 If you are on any system other than Linux, install `balena-etcher` or any comparable program to burn the ISO to a USB.
 
