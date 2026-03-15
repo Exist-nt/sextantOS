@@ -1,0 +1,152 @@
+/*Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration*/
+
+/*Reset all styles*/
+* {
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*The whole bar*/
+#waybar {
+	color: #b4befe;
+	background-color: transparent;
+	border-radius: 12px;
+	font-family: "FiraCode Nerd Font";
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.modules-left > widget:first-child > * {
+	margin-left: 15px;
+}
+
+.modules-right > widget:last-child > * {
+	margin-right: 15px;
+}
+
+tooltip label {
+	font-size: 12px;
+}
+
+/*Common module settings*/
+#workspaces,
+#window,
+#clock,
+#temperature,
+#cpu,
+#memory,
+#network,
+#bluetooth,
+#idle_inhibitor,
+#idle_inhibitor.activated,
+#custom-power {
+	background: #313244;
+	border-radius: 12px;
+	padding: .1rem .65rem;
+	margin: 3px;
+}
+
+#clock:hover,
+#temperature:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#bluetooth:hover,
+#idle_inhibitor:hover,
+#custom-power:hover {
+	background: #6c7086;
+	transition: 0.5s;
+}
+
+/*Individual module settings*/
+#workspaces,
+#window {
+	background: transparent;
+	font-weight: normal;
+}
+
+#workspaces button.focused {
+	border: 2px solid #b4befe;
+}
+workspaces button.urgent {
+	border: 2px solid #f38ba8;
+}
+#workspaces button {
+	color: #b4befe;
+	border-radius: 45%;
+	padding: .3rem .35rem;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+#workspaces button:hover {
+	background: transparent;
+	border: 2px solid #cba6f7;
+}
+
+#window {
+	margin-top: 2px;
+}
+
+#clock {
+	color: #b4befe;
+	border: 2px solid #b4befe;
+}
+
+#temperature {
+	color: #eba0ac;
+}
+
+#cpu {
+	color: #fab387;
+}
+
+#memory {
+	color: #f9e2af;
+}
+
+#temperature.warning,
+#cpu.warning,
+#memory.warning {
+	border: 1px solid #fab387;
+}
+
+#temperature.critical,
+#cpu.critical,
+#memory.critical {
+	border: 1px solid #fab387;
+}
+
+#network {
+	color: #a6e3a1;
+}
+#network.disconnected {
+	border: 2px solid #a6e3a1;
+}
+
+#bluetooth {
+	color: #89b4fa;
+}
+#bluetooth.disabled {
+	border: 2px solid #89b4fa;
+}
+
+#idle_inhibitor {
+	color: #cba6f7;
+	padding: 0px 8px;
+	border: 3px solid #313244;
+}
+#idle_inhibitor.activated {
+	border: 2px solid #cba6f7;
+}
+
+#custom-power {
+	color: #f38ba8;
+	border: 2px solid #f38ba8;
+	padding-right: 0.8rem;
+	margin-right: 6px;
+}
+
+	

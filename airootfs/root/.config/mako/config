@@ -1,0 +1,49 @@
+# GLOBAL CONFIGURATION OPTIONS
+max-history=100
+sort=-time
+
+# BINDING OPTIONS
+on-button-left=dismiss
+on-button-middle=none
+on-button-right=dismiss-all
+on-touch=dismiss
+
+# STYLE OPTIONS
+font=FiraCode 10
+width=300
+height=100
+margin=10
+padding=15
+border-size=2
+border-radius=12
+icons=1
+max-icon-size=48
+icon-location=left
+markup=1
+actions=1
+history=1
+text-alignment=left
+default-timeout=5000
+ignore-timeout=0
+max-visible=5
+layer=overlay
+anchor=top-right
+
+# Mako_Colors
+background-color=#1E1E2E
+text-color=#B4BEFE
+border-color=#B4BEFE
+progress-color=over #CBA6F7
+
+[urgency=low]
+border-color=#B4BEFE
+default-timeout=2000
+
+[urgency=normal]
+border-color=#F9E2AF
+default-timeout=5000
+
+[urgency=high]
+border-color=#F38BA8
+text-color=#B4BEFE
+default-timeout=0

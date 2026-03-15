@@ -1,0 +1,14 @@
+image=~/.config/sway/sextant-blurred.png
+scaling=stretch
+ring-color=#b4befe
+ring-clear-color=#f9e2af
+ring-ver-color=#a6e3a1
+ring-wrong-color=#f38ba8
+bs-hl-color=#f5c2e7
+font=FiraCodeNerdFont
+inside-color=#9399b2
+inside-clear-color=#fab387
+inside-ver-color=#94e2d5
+inside-wrong-color=#eba0ac
+key-hl-color=#89dceb
+line-uses-ring=true

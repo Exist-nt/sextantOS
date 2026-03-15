@@ -1,0 +1,131 @@
+{
+    "layer": "top",
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 32, // Uncomment to set a custom height
+    //"output": "DP-1", // Uncomment to specify a display
+    //"width": 1850, // Uncomment to set a custom width
+
+// Configuration - modules-left
+
+    "modules-left": ["sway/workspaces", "sway/window"],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+        	"1": "",
+        	"2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": ""
+        }
+    },
+
+    "sway/window": {
+        "format": "{}",
+        "all-outputs": true, // Active window shows only on active display when commented
+        "max-length": 70
+    },
+
+// Configuration - modules-center
+    
+    "modules-center": ["clock"],
+
+"clock": {
+    "format": "󰅐 {:%OI:%M %p}",
+    "on-click": "kitty -T waybar_calcurse -e calcurse",
+    // Uncomment to enable right-click calcurse-caldav sync (you need to set it up in calcurse config)
+    //"on-click-right": "notify-send \"Running calcurse-caldav...\" \"$(calcurse-caldav)\"",
+    "tooltip-format": " {:%A %m/%d}\n\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+        "on-scroll": 1,
+        "format": {
+            "months":     "<span color='#f5e0dc'><b>{}</b></span>",
+            "days":       "<span color='#f2cdcd'><b>{}</b></span>",
+            "weeks":      "<span color='#94e2d5'><b>W{}</b></span>",
+            "weekdays":   "<span color='#fab387'><b>{}</b></span>",
+            "today":      "<span color='#f38ba8'><b><u>{}</u></b></span>"
+        },
+    },
+},
+
+// Configuration - modules-right
+
+    "modules-right": ["temperature", "cpu", "memory", "network", "bluetooth", "idle_inhibitor", "custom/power"],
+    
+"temperature": {
+    "critical-threshold": 80,
+    "format-critical": " {temperatureC}°C",
+    "format": " {temperatureC}°C",
+    "tooltip-format": " {temperatureC}° Celsius\n{temperatureF}° Fahrenheit\n{temperatureK}° Kelvin",
+    "on-click": "kitty -T waybar_btop -e btop"
+},
+
+"cpu": {
+    "interval": 5,
+    "format": " {usage}%",
+    "states": {
+        "warning": 70,
+        "critical": 90,
+    },
+	"on-click": "kitty -T waybar_btop -e btop"
+},
+    
+"memory": {
+    "interval": 5,
+    "format": " {}%",
+    "on-click": "kitty -T waybar_btop -e btop", 
+    "states": {
+        "warning": 70,
+        "critical": 90
+     },
+    "tooltip-format": "   Memory: {total} GiB\n   In use: {used} GiB ({percentage}%)\nAvailable: {avail} GiB\n     Swap: {swapTotal} GiB\n   In use: {swapUsed} GiB ({swapPercentage}%)\nAvailable: {swapAvail} GiB",
+},
+
+"network": {
+    "format-disabled": " Disabled",
+    "format-wifi": " {essid}",
+    "tooltip-format-wifi": "{bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣",
+    "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+    "tooltip-format-ethernet": "{bandwidthDownBits:>} 󰶡 {bandwidthUpBits:>} 󰶣",
+    "format-disconnected": " Disconnected",
+    "on-click": "kitty -T waybar_nmtui -e nmtui",
+    "interval": 2
+},
+
+"bluetooth": {
+    "format": "󰂯 {status}:{num_connections}",
+    "format-on": "󰂯",
+    "format-off": "󰂲",
+    "format-disabled": "", // an empty format will hide the module
+    "format-icons": ["󰤾", "󰤿", "󰥀", "󰥁", "󰥂", "󰥃", "󰥄", "󰥅", "󰥆", "󰥈"],
+    "tooltip-format": "L󰍽: bluetui\nR󰍽: bluetoothctl power on/off\nController: {controller_alias}\t{controller_address}\nConnected devices: {num_connections}",
+    "tooltip-format-connected": "L󰍽: bluetui\nR󰍽: bluetoothctl power on/off\nController: {controller_alias}\t{controller_address}\nConnected devices: {num_connections}\nDevice---------------Address------------Battery\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias:<20} {device_address:<18}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias:<20.20} {device_address:<18.18} {icon} {device_battery_percentage}%",
+    "on-click": "kitty -T waybar_bluetui -e bluetui",
+    "on-click-right": "~/.config/sway/scripts/bluetooth_toggle.sh"
+},
+
+"idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": " ",
+        "deactivated": " ",
+    },
+    "max-length": 2,
+    "tooltip-format-activated": "Activated",
+    "tooltip-format-deactivated": "Deactivated"
+},
+
+"custom/power": {
+    "format":"⏻",
+    "on-click": "systemctl poweroff",
+    "tooltip-format": "Shutdown"
+},
+}

@@ -172,7 +172,8 @@ bluez
 bluez-utils
 bluetui
 plymouth
-limine
+xorg-xhost
+os-prober
 
 #Sextant repo packages
 calamares

@@ -123,15 +123,15 @@ navigation: widget
 strings:
     productName:         "${NAME}"
     shortProductName:    Sextant
-    version:             1.0.0 Mercury
-    shortVersion:        1.0.0
-    versionedName:       SextantOS 1.0.0 "Mercury"
-    shortVersionedName:  SextantOS 1.0.0
+    version:             0.1.1 Pluto
+    shortVersion:        0.1.1
+    versionedName:       SextantOS 0.1.1 "Pluto"
+    shortVersionedName:  SextantOS 0.1.1
     bootloaderEntryName: SextantOS
     productUrl:          https://existnt.net/projects/sextant
-    #supportUrl:          https://github.com/calamares/calamares/wiki
+    supportUrl:          https://github.com/Exist-nt/sextantOS/issues
     #knownIssuesUrl:      https://github.com/calamares/calamares/issues
-    releaseNotesUrl:     https://github.com/Exist-nt/sextantOS
+    releaseNotesUrl:     https://github.com/Exist-nt/sextantOS/releases
     #donateUrl:           https://kde.org/community/donations/index.php
 
 # These images are loaded from the branding module directory.
