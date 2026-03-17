@@ -2,4 +2,7 @@ root:x:0:root
 adm:x:4:sextant
 wheel:x:10:sextant
 uucp:x:14:sextant
-sextant:x:1000:
+nopasswdlogin:x:966:sextant
+rfkill:x:983:sextant
+sys:x:3:bin,sextant
+sextant:x:1000:sextant
