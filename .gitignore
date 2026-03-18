@@ -1,1 +1,10 @@
 images/
+.DS_Store
+airootfs/.DS_Store
+airootfs/etc/.DS_Store
+airootfs/root/.config/.DS_Store
+airootfs/root/.config/sway/.DS_Store
+airootfs/root/.DS_Store
+airootfs/usr/lib/calamares/.DS_Store
+airootfs/usr/lib/calamares/.DS_Store
+airootfs/usr/lib/calamares/.DS_Store
