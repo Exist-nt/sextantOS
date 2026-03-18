@@ -23,6 +23,7 @@ file_permissions=(
   ["/etc/ly/setup.sh"]="0:0:777"
   ["/root/.automated_script.sh"]="0:0:755"
   ["/etc/skel/.automated_script.sh"]="0:0:755"
+  ["/etc/skel/.config/sway/scripts/hidpi_1.5.sh"]="0:0:777"
   ["/root/.gnupg"]="0:0:700"
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/Installation_guide"]="0:0:755"
