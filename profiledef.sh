@@ -19,6 +19,7 @@ file_permissions=(
   ["/etc/gshadow"]="0:0:400"
   ["/etc/skel/.config/sway/scripts"]="0:0:777"
   ["/root"]="0:0:750"
+  ["/root/.config/sway/scripts"]="0:0:777"
   ["/etc/ly/setup.sh"]="0:0:777"
   ["/root/.automated_script.sh"]="0:0:755"
   ["/etc/skel/.automated_script.sh"]="0:0:755"
