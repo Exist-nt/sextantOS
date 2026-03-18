@@ -17,6 +17,8 @@ bootstrap_tarball_compression=('zstd' '-c' '-T0' '--auto-threads=logical' '--lon
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
   ["/etc/gshadow"]="0:0:400"
+  ["/etc/sudoers.d"]="0:0:750"
+  ["/etc/sudoers.d/g_wheel"]="0:0:440"
   ["/etc/skel/.config/sway/scripts"]="0:0:777"
   ["/root"]="0:0:750"
   ["/root/.config/sway/scripts"]="0:0:777"
