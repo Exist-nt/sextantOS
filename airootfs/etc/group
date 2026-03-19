@@ -5,4 +5,4 @@ uucp:x:14:sextant
 nopasswdlogin:x:966:sextant
 rfkill:x:983:sextant
 sys:x:3:bin,sextant
-sextant:x:1000:sextant
+sextant:x:1000:
