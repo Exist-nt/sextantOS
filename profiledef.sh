@@ -2,11 +2,12 @@
 # shellcheck disable=SC2034
 
 iso_name="sextantos"
-iso_label="SEXTANT_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_label="SEXTANT_$(date +%Y%m%d)"
 iso_publisher="Existnt Tech <https://existnt.net>"
-iso_application="SextantOS Live/Rescue DVD"
-iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
-install_dir="data"
+iso_application="SextantOS Live Environment"
+iso_version="$(date %F)"
+install_dir="arch"
+isofs_dir=""
 buildmodes=('iso')
 bootmodes=('bios.syslinux'
            'uefi.systemd-boot')
