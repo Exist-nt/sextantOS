@@ -6,7 +6,7 @@
 
 SextantOS is an Arch-based Linux distribution built around keyboard navigation and a minimal aesthetic. It uses the **sway** window manager and many TUI-based applications to make it as lightweight and fast as possible, with preconfigured settings to ensure consistent and good-looking theming.
 
-There are two main ways of getting Sextant: **building with ArchISO** or **downloading a released ISO**.
+There are two main ways of using Sextant: **building with ArchISO** or **downloading a released ISO**.
 
 <p align=center>
   <img src="https://existnt.net/Images/sextant-rofi.png" alt="Promo image 2" width=600 />
