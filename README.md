@@ -34,6 +34,6 @@ On Linux, you can either use `balena-etcher` for a graphical interface or the `d
 
 First, navigate to the directory containing the ISO (`Downloads` or `out`), then run the following command:
 ```
-sudo dd if=sextantos-XXXX.XX.XX-x86_64.iso of=/dev/sdX status=progress && sync
+sudo dd if=sextantos-XXXX.XX.XX-x86_64.iso of=/dev/sdX status=progress
 ```
 You'll need to specify the date in the ISO's filename, and the letter of the USB drive which you want the ISO to be burned to (use `lsblk` to list the available devices and their drive letter)
